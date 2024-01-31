@@ -358,6 +358,11 @@ padding: 10px 30px;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 550px) {
+  .parrafo-2 p {
+    padding-top: 110px;
+  }
+}
 @media (max-width: 768px) {
   .contenedor-cuerpo-txt-columnas {
     margin: 0;
