@@ -360,7 +360,7 @@ padding: 10px 30px;
 }
 @media (max-width: 550px) {
   .parrafo-2 p {
-    padding-top: 110px;
+    padding-top: 110px!important;
   }
 }
 @media (max-width: 768px) {
