@@ -102,6 +102,9 @@ h3 {
 }
 
 /* estilos para que en LV se muestre el contenido sin margenes */
+.wallpaper-inverted-ad{
+  display: none!important;
+}
 .visual-article-free .col-12 {
   padding-right: 0 !important;
   padding-left: 0 !important;
