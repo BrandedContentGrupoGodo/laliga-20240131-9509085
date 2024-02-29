@@ -189,7 +189,7 @@ h3 {
 }
 .contenedor-video {
   position: relative;
-  width: calc(100% - 20px); /* Set width to screen size - 40px padding on both sides */
+  width: calc(100% - 40px); /* Set width to screen size - 40px padding on both sides */
   max-height: 100vh; /* Set max height to the screen size */
   height: 0;
   padding: 0 20px; /* Padding on left and right */
