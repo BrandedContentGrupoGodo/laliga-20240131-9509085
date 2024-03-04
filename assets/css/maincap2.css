@@ -186,6 +186,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .contenedor-video {
   position: relative;
@@ -588,6 +589,7 @@ padding-left: 0;
 font-weight: 300;
 text-transform: none;
 color: white!important;
+  line-height: 93%;
 }
 .dest-collage p{
   font-weight: 300;
