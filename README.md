@@ -1,6 +1,6 @@
 # LALIGA CAP 1 - 2024 
 
-_Hub de contenidos "LA FUERZA DEL FUTBOL"_
+_Proyecto "LA FUERZA DEL FUTBOL"_
 
 
 ## 📁 Acceso al proyecto 
