@@ -131,6 +131,10 @@ h3 {
   padding-left: 0!important;
   margin-top: 0!important;
 }
+.article-default a:hover {
+  text-decoration: none;
+  box-shadow: none;
+}
 
 /* INICIO titular*/
 .rojo {
