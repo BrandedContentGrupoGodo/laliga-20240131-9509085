@@ -699,3 +699,29 @@ margin: auto;
   text-decoration: none;
   box-shadow: none;
 }
+/* NAV EPISODIOS*/
+
+.flex-container-nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-container-nav img {
+  max-width: 80%;
+}
+.flex-container-nav img:hover {
+  opacity: 0.7;
+}
+.nav-hub {
+  color: #584848;
+  font-size: 14px;
+}
+.no-show p{
+  color: transparent!important;
+}
+.no-show a {
+  display: none;
+}
