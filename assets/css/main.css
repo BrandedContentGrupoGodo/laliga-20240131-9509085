@@ -663,3 +663,35 @@ padding-left: 24px;
   margin-left: auto;
   max-width: 980px
 }
+/* LALIGA */
+.laliga-logo {
+  max-width: 250px;
+  text-align: center;
+  margin: auto;
+}
+
+.text-red {
+color: #FF4B44;
+text-align: center;
+max-width: 320px;
+margin: auto;
+}
+
+.btn-fan {
+  color: white;
+  text-align: center;
+  background-color: #FF4B44;
+  width: 145px;
+  max-height: 45px;
+  border-radius: 5px;
+  padding: 10px 35px;
+  text-decoration: none;
+  margin: auto;
+}
+.btn-fan:hover {
+  background-color: #db3f3a;
+}
+.cont-btn {
+  text-align: center;
+  margin: auto;
+}
