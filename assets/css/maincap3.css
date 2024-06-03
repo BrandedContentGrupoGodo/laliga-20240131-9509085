@@ -756,3 +756,7 @@ margin: auto;
   text-align: center;
   margin: auto;
 }
+.article-default a:hover {
+  text-decoration: none;
+  box-shadow: none;
+}
