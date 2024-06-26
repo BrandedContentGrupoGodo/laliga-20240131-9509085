@@ -287,12 +287,12 @@ h3 {
   background-size: cover;
 }
 .parallax-img-destacado1 {
-  background-image: url('../img5/destacado-laliga-1.jpg');
+  background-image: url('https://brandedcontentgrupogodo.github.io/laliga-20240131-9509085/assets/img5/destacado-laliga-1.jpg');
   /* background-image: url('https://brandedcontentgrupogodo.github.io/laliga1/cap1/assets/img/destacado-laliga-1.jpg'); */
 }
 @media (max-width: 550px) {
   .parallax-img-destacado1 {
-      background-image: url('../img5/destacado-laliga-1-mobile.jpg');
+      background-image: url('https://brandedcontentgrupogodo.github.io/laliga-20240131-9509085/assets/img5/destacado-laliga-1-mobile.jpg');
   }
 }
 @media (max-width: 980px) {
@@ -456,7 +456,7 @@ padding: 10px 30px;
   position: relative;
   width: 100%;
   height: 300px;
-  background-image: url('../img5/destacado-laliga-2.jpg');
+  background-image: url('https://brandedcontentgrupogodo.github.io/laliga-20240131-9509085/assets/img5/destacado-laliga-2.jpg');
   /* background-image: url('https://brandedcontentgrupogodo.github.io/laliga1/cap1/assets/img/destacado-laliga-2.jpg');  */
   background-size: cover;
   background-position: left top;
@@ -586,7 +586,7 @@ padding: 10px 30px;
 .dest-collage {
   width: 100%;
   height: auto;
-  background-image: url('../img5/fondo.jpg');
+  background-image: url('https://brandedcontentgrupogodo.github.io/laliga-20240131-9509085/assets/img5/fondo.jpg');
   /* background-image: url('https://brandedcontentgrupogodo.github.io/laliga1/cap1/assets/img/fondo-collage.jpg');  */
   background-size: cover;
   background-position: center;
