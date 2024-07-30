@@ -340,46 +340,76 @@ padding: 10px 30px;
   display: flex;
   justify-content: center;
   margin: auto;
+  overflow: hidden; /* Previene el desbordamiento horizontal */
 }
+
 .carousel-wrapper {
   display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Añade un snapping suave */
 }
+
 .slide {
-  height: 450px;
+  flex: 0 0 auto;
+  height: auto;
   width: 100%;
   padding: 20px;
-  margin-left: 20px;
+  margin: 0 10px; /* Espaciado entre los slides */
   box-sizing: border-box;
   border: 1px solid var(--red-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 100;
+  scroll-snap-align: start; /* Alinea cada slide al inicio */
 }
+
 .number {
   font-size: 96px;
   font-weight: 200;
   color: var(--red-color);
 }
+
 .paragraph {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.5;
 }
+
+/* Media Queries para hacer el diseño responsivo */
 @media screen and (min-width: 1200px) {
+  .carousel-wrapper {
+    flex-wrap: nowrap;
+  }
+
   .slide {
-    flex: 0 0 30%; /* Adjusted to show a third of the third slide */
+    flex: 0 0 30%; /* Cada slide ocupa el 30% del contenedor */
+    margin: 0 10px; /* Espaciado entre los slides */
   }
 }
-@media (max-width: 550px) {
-  section .carousel-container {
-    height: auto;
+
+@media (max-width: 1199px) {
+  .slide {
+    flex: 0 0 45%; /* Cada slide ocupa el 45% del contenedor */
+    margin: 0 10px;
   }
-  .carousel-wrapper{
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 90%; /* Cada slide ocupa el 90% del contenedor */
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel-wrapper {
     flex-direction: column;
   }
+
   .slide {
-    margin-left: 0;;
+    width: calc(100% - 40px); /* Ajusta el ancho del slide */
+    margin: 10px 0; /* Espaciado entre los slides */
   }
 }
 
