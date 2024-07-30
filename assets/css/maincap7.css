@@ -340,13 +340,13 @@ padding: 10px 30px;
   display: flex;
   justify-content: center;
   margin: auto;
-  overflow: hidden; /* Previene el desbordamiento horizontal */
+  overflow: hidden;
 }
 
 .carousel-wrapper {
   display: flex;
-  overflow-x: auto; /* Permite el desplazamiento horizontal */
-  scroll-snap-type: x mandatory; /* Añade un snapping suave */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .slide {
@@ -354,20 +354,21 @@ padding: 10px 30px;
   height: auto;
   width: 100%;
   padding: 20px;
-  margin: 0 10px; /* Espaciado entre los slides */
+  margin: 0 10px;
   box-sizing: border-box;
   border: 1px solid var(--red-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 100;
-  scroll-snap-align: start; /* Alinea cada slide al inicio */
+  scroll-snap-align: start;
 }
 
 .number {
   font-size: 96px;
   font-weight: 200;
   color: var(--red-color);
+  padding-bottom: 50px;
 }
 
 .paragraph {
@@ -376,28 +377,54 @@ padding: 10px 30px;
   line-height: 1.5;
 }
 
-/* Media Queries para hacer el diseño responsivo */
+/* Personalización de la barra de scroll */
+.carousel-wrapper::-webkit-scrollbar {
+  height: 8px; /* Ajusta el grosor de la scrollbar */
+}
+
+.carousel-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del fondo de la scrollbar */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+  background: var(--red-color); /* Color de la barra de desplazamiento */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background 0.3s ease-in-out; /* Transición suave */
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--red-color), 15%); /* Color al pasar el cursor */
+}
+
+/* Estilos de scroll para Firefox */
+.carousel-wrapper {
+  scrollbar-width: thin; /* Ajusta el grosor de la scrollbar */
+  scrollbar-color: var(--red-color) #f1f1f1; /* Color del pulgar y pista */
+}
+
+/* Media Queries */
 @media screen and (min-width: 1200px) {
   .carousel-wrapper {
     flex-wrap: nowrap;
   }
 
   .slide {
-    flex: 0 0 30%; /* Cada slide ocupa el 30% del contenedor */
-    margin: 0 10px; /* Espaciado entre los slides */
+    flex: 0 0 30%;
+    margin: 0 10px;
   }
 }
 
 @media (max-width: 1199px) {
   .slide {
-    flex: 0 0 45%; /* Cada slide ocupa el 45% del contenedor */
+    flex: 0 0 45%;
     margin: 0 10px;
   }
 }
 
 @media (max-width: 768px) {
   .slide {
-    flex: 0 0 90%; /* Cada slide ocupa el 90% del contenedor */
+    flex: 0 0 90%;
     margin: 0 5px;
   }
 }
@@ -408,8 +435,8 @@ padding: 10px 30px;
   }
 
   .slide {
-    width: calc(100% - 40px); /* Ajusta el ancho del slide */
-    margin: 10px 0; /* Espaciado entre los slides */
+    width: calc(100% - 40px);
+    margin: 10px 0;
   }
 }
 
